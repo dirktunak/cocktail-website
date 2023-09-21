@@ -11,12 +11,10 @@ function Home() {
             <Grid>
                 {Object.keys(drinks).map(drinkName => {
                     return (
-                        <React.Fragment
-                            key={drinkName}
-                            drinkName={`react-fragment-${drinks[drinkName].name}`}>
+                        <React.Fragment key={drinkName}>
                             <HomepageDrink
-                                name={drinkName}
-                                drinkName={drinks[drinkName].name}></HomepageDrink>
+                                name={drinks[drinkName].name}
+                                drinkName={drinkName}></HomepageDrink>
                         </React.Fragment>
                     )
                 })}
