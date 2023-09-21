@@ -2,7 +2,7 @@
     "name": "cocktail-website",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://dirktunak.github.io/react-gh-pages",
+    "homepage": "http://dirktunak.github.io/cocktail-website",
     "main": "index.js",
     "scripts": {
         "serve": "webpack-dev-server --config webpack.dev.js --host localhost --port 8000",
@@ -12,8 +12,8 @@
         "jest": "jest",
         "lint": "eslint 'src/**/*.js'",
         "format": "eslint 'src/**/*.js' --fix",
-        "pre": "npm run lint:fix && npm run jest && npm run build:dev",
-        "predeploy": "npm run lint:fix && npm run jest && npm run build",
+        "pre": "npm run format && npm run jest && npm run build:dev",
+        "predeploy": "npm run format && npm run jest && npm run build",
         "deploy": "gh-pages -d build"
     },
     "dependencies": {
