@@ -18,9 +18,9 @@ function App() {
     return (
         <StyledApp>
             <Router history={history}>
-                <Route path={'/'} component={Home}/>
+                <Route path={'/'} component={Home} />
             </Router>
-        </StyledApp>			
+        </StyledApp>
     )
 }
 
