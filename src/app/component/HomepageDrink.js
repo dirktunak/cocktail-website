@@ -1,13 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import getImagePath from '../images/imagePath'
+
 import HomepageDrinkStyled from '../styled/homepageDrinkStyle'
 
 function HomepageDrink(props) {
     const { name, drinkName } = props
+
     return (
         <HomepageDrinkStyled>
-            <img src={`../../../images/${drinkName}.png`} />
+            <img src={`${getImagePath()}/${drinkName}.png`} />
             {name}
         </HomepageDrinkStyled>
     )
