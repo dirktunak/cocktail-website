@@ -2,7 +2,7 @@ import React from 'react'
 
 import Grid from '../styled/gridStyle'
 import HomepageDrink from './HomepageDrink'
-import drinks from './constants'
+import drinks from '../drinks'
 
 function Home() {
     return (

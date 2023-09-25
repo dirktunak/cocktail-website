@@ -5,6 +5,7 @@ import { Route, Router } from 'react-router-dom'
 import history from '../history'
 
 import Home from './component/home'
+import DrinksDetails from './component/drinkDetails'
 
 const StyledApp = styled.div`
     text-align: center;
@@ -18,7 +19,8 @@ function App() {
     return (
         <StyledApp>
             <Router history={history}>
-                <Route path={'/'} component={Home} />
+                <Route path={'/:drink'} component={DrinksDetails} />
+                <Route exact path={'/'} component={Home} />
             </Router>
         </StyledApp>
     )
